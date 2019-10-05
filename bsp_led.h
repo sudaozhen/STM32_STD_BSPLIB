@@ -1,11 +1,12 @@
-/****************************************************************
-    Filename£º  bsp_led.h
-	Author:     Su Daozhen
-	Libraries:  stdlib v3.5.0
-	Version:    v1.0.0
-	Date:       05/10/2019
-	
-*****************************************************************/
+/**
+  **************************************************************
+  *@Filename£º  bsp_led.h
+	*@Author:     Su Daozhen
+	*@Libraries:  stdlib v3.5.0
+	*@Version:    v1.0.2
+	*@Date:       05/10/2019
+  **************************************************************
+	*/
 #ifndef __BSP_LED_H__
 #define __BSP_LED_H__
 
@@ -40,8 +41,8 @@
 #define LED3_TOGGLE               (LED3_GPIO_PORT->ODR ^= LED3_GPIO_PIN)
 
 void LED_GPIO_Config(void);
-//void LED1_ON(void);
-//void LED1_OFF(void);
-//void LED2_ON(void);
-//void LED2_OFF(void);
+
 #endif /*__BSP_LED_H__*/
+
+/**** Copyright (C)2019 Su Daozhen. All Rights Reserved **** END OF FILE ****/
+
