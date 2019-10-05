@@ -1,5 +1,19 @@
+/**
+  **************************************************************
+  *@Filename：  bsp_led.c
+	*@Author:     Su Daozhen
+	*@Libraries:  stdlib v3.5.0
+	*@Version:    v1.0.2
+	*@Date:       05/10/2019
+  **************************************************************
+	*/
 #include "./led/bsp_led.h"
 
+/**
+  * @brief  LED Initial Configuration.
+  * @param  None
+  * @retval None
+  */
 void LED_GPIO_Config(void)
 {
 	GPIO_InitTypeDef GPIO_InitStruct;
@@ -24,27 +38,6 @@ void LED_GPIO_Config(void)
 	GPIO_Init(LED3_GPIO_PORT, &GPIO_InitStruct);
 	LED3_OFF;
 }
-/*
-//LED1开关函数
-void LED1_ON(void)
-{
-	GPIO_ResetBits(LED1_GPIO_PORT, LED1_GPIO_PIN);
-}
+/**** Copyright (C)2019 Su Daozhen. All Rights Reserved **** END OF FILE ****/
 
-void LED1_OFF(void)
-{
-	GPIO_SetBits(LED1_GPIO_PORT, LED1_GPIO_PIN);
-}
-
-//LED2开关函数
-void LED2_ON(void)
-{
-	GPIO_ResetBits(LED2_GPIO_PORT, LED2_GPIO_PIN);
-}
-
-void LED2_OFF(void)
-{
-	GPIO_SetBits(LED2_GPIO_PORT, LED2_GPIO_PIN);
-}
-*/
 
